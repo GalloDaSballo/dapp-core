@@ -1,7 +1,7 @@
 {
   "name": "dapp-core",
-  "version": "0.7.15",
-  "description": "Core dapp logic using Tightbeam, Apollo Link Ethereum, and/or Ethers",
+  "version": "0.8.0",
+  "description": "METAMASK FIX Core dapp logic using Tightbeam, Apollo Link Ethereum, and/or Ethers",
   "main": "dist/bundle.js",
   "repository": "https://github.com/pooltogether/dapp-core",
   "contributors": [
@@ -12,6 +12,10 @@
     {
       "name": "Chuck Bergeron",
       "email": "chuck@delta.camp"
+    },
+    {
+      "name": "Alex The Entreprenerd",
+      "email": "alex@entreprenerd.xyz"
     }
   ],
   "license": "MIT",
