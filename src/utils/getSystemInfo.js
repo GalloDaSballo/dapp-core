@@ -76,25 +76,16 @@ const getWeb3Permission = async function () {
 
   if (isWindowDefined() && window.ethereum) {
     let isUnlocked,
-      // isEnabled,
-      isApproved
 
     if (window.ethereum._metamask) {
       isUnlocked = await window.ethereum._metamask.isUnlocked()
-      // isEnabled = await window.ethereum._metamask.isEnabled()
-      isApproved = await window.ethereum._metamask.isApproved()
+
+
     }
 
     debug(window.ethereum)
 
-    // // hack due to a MetaMask bug that shows up when you Quit Chrome and re-open Chrome
-    // // right back to the tab using MetaMask
-    // if ((isUnlocked && isApproved) && !defined(this.props.address)) {
-    //   window.location.reload(true)
-    // }
-
-    // hasPermission = isUnlocked && isEnabled && isApproved
-    hasPermission = isUnlocked && isApproved
+    hasPermission = isUnlocked
   }
 
   return hasPermission
